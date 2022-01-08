@@ -1,0 +1,174 @@
+:root {
+  --font-family: "Karla", sans-serif;
+  --primary-color: #ffff00;
+  --black-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  padding: 0 20rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: radial-gradient(
+      circle closest-side at 60% 43%,
+      var(--black-color) 26%,
+      transparent 27%
+    ),
+    radial-gradient(
+      circle closest-side at 40% 43%,
+      var(--black-color) 26%,
+      transparent 27%
+    ),
+    radial-gradient(
+      circle closest-side at 40% 22%,
+      var(--primary-color) 45%,
+      transparent 46%
+    ),
+    radial-gradient(
+      circle closest-side at 60% 22%,
+      var(--primary-color) 45%,
+      transparent 46%
+    ),
+    radial-gradient(
+      circle closest-side at 50% 35%,
+      var(--primary-color) 30%,
+      transparent 31%
+    ),
+    radial-gradient(
+        circle closest-side at 60% 43%,
+        var(--black-color) 26%,
+        transparent 27%
+      )
+      5rem 5rem,
+    radial-gradient(
+        circle closest-side at 40% 43%,
+        var(--black-color) 26%,
+        transparent 27%
+      )
+      5rem 5rem,
+    radial-gradient(
+        circle closest-side at 40% 22%,
+        var(--primary-color) 45%,
+        transparent 46%
+      )
+      5rem 5rem,
+    radial-gradient(
+        circle closest-side at 60% 22%,
+        var(--primary-color) 45%,
+        transparent 46%
+      )
+      5rem 5rem,
+    radial-gradient(
+        circle closest-side at 50% 35%,
+        var(--primary-color) 30%,
+        transparent 31%
+      )
+      5rem 5rem,
+    var(--black-color);
+  background-size: 10rem 10rem;
+}
+
+.wrapper {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.2rem;
+  background-color: var(--primary-color);
+  border: 0.2rem solid var(--black-color);
+}
+
+#btn {
+  font: 500 2.2rem var(--font-family);
+  margin: 4rem auto 0;
+  padding: 1.3rem 2rem;
+  border-radius: 0.2rem;
+  color: var(--primary-color);
+  background-color: var(--black-color);
+  border: 0.2rem solid var(--primary-color);
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#btn:hover {
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  border: 0.2rem solid var(--black-color);
+}
+
+#btn:active {
+  transition: 0.2s ease;
+  transform: scale(0.96);
+}
+
+#text {
+  font: 500 2.7rem var(--font-family);
+  color: var(--black-color);
+}
+
+::selection {
+  background-color: var(--black-color);
+  color: var(--primary-color);
+}
+
+#loadingDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: var(--black-color);
+}
+
+.loader {
+  width: 12.5rem;
+  height: 12.5rem;
+  background: center / contain no-repeat url(../img/heart.gif);
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 9px;
+  }
+
+  body {
+    padding: 0 15rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 8px;
+  }
+
+  body {
+    padding: 0 10rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 7px;
+  }
+
+  body {
+    padding: 0 6rem;
+  }
+}
