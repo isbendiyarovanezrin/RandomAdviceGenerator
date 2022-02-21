@@ -26,3 +26,7 @@ function removeLoader() {
     $("#loadingDiv").remove();
   });
 }
+
+// background music
+const song = document.getElementById("song");
+song.play();
