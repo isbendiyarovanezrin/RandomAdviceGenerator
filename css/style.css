@@ -119,6 +119,7 @@ body {
 #text {
   font: 500 2.7rem var(--font-family);
   color: var(--black-color);
+  text-align: center;
 }
 
 ::selection {
