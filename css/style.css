@@ -2,6 +2,8 @@
   --font-family: "Karla", sans-serif;
   --primary-color: #ffff00;
   --black-color: #000;
+  --linear-gradient-color1: #ffff001a;
+  --linear-gradient-color2: #ffff0091;
 }
 
 * {
@@ -101,13 +103,15 @@ body {
   border: 0.2rem solid var(--black-color);
   user-select: none;
   cursor: pointer;
-  transition: all 0.5s ease;
   -webkit-tap-highlight-color: transparent;
 }
 
 #btn:hover {
-  background-color: var(--primary-color);
-  color: var(--black-color);
+  background-image: linear-gradient(
+    to left,
+    var(--linear-gradient-color1),
+    var(--linear-gradient-color2)
+  );
 }
 
 #btn:active {
