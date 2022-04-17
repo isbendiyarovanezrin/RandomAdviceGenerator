@@ -1,5 +1,6 @@
 "use strict";
 
+const song = document.getElementById("song");
 const btn = document.getElementById("btn");
 const p = document.getElementById("text");
 
@@ -28,5 +29,5 @@ function removeLoader() {
 }
 
 // background music
-const song = document.getElementById("song");
+song.currentTime = 3;
 song.play();
