@@ -98,7 +98,7 @@ body {
   border-radius: 0.2rem;
   color: var(--primary-color);
   background-color: var(--black-color);
-  border: 0.2rem solid var(--primary-color);
+  border: 0.2rem solid var(--black-color);
   user-select: none;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -108,12 +108,11 @@ body {
 #btn:hover {
   background-color: var(--primary-color);
   color: var(--black-color);
-  border: 0.2rem solid var(--black-color);
 }
 
 #btn:active {
   transition: 0.2s ease;
-  transform: scale(0.96);
+  transform: scale(0.97);
 }
 
 #text {
